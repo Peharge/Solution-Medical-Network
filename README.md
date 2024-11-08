@@ -1,5 +1,5 @@
 <p align="center">
-    <img src="./snm-logo.png" width="500"/>
+    <img src="snm-logo.png" width="500"/>
 </p>
 <div align="center">
 <img alt="smn" src="https://img.shields.io/badge/SMN-F7DF1E">
