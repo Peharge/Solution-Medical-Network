@@ -1,6 +1,6 @@
 <br>
 <p align="center">
-    <img src="smn-logo2.svg" width="300"/>
+    <img src="smn-logo.svg" width="300"/>
 </p>
 <br>
 <div align="center">
