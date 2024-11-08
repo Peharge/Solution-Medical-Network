@@ -2,8 +2,8 @@
     <img src="./snm-logo.png" width="500"/>
 </p>
 <div align="center">
-<img alt="Chatpp" src="https://img.shields.io/badge/Chat++-F7DF1E">
-<img alt="tg-loerrach" src="https://img.shields.io/badge/TG Lörrach-red">
+<img alt="smn" src="https://img.shields.io/badge/SMN-F7DF1E">
+<img alt="tg-loerrach" src="https://img.shields.io/badge/Peharge-red">
 <br>
 <br>
 
