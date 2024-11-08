@@ -1,6 +1,7 @@
 <p align="center">
-    <img src="snm-logo.png" width="500"/>
+    <img src="smn-logo.svg" width="300"/>
 </p>
+<br>
 <div align="center">
 <img alt="smn" src="https://img.shields.io/badge/SMN-F7DF1E">
 <img alt="tg-loerrach" src="https://img.shields.io/badge/Peharge-red">
