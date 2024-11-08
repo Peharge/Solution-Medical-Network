@@ -1,3 +1,4 @@
+<br>
 <p align="center">
     <img src="smn-logo.svg" width="300"/>
 </p>
