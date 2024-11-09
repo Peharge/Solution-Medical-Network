@@ -50,5 +50,5 @@ The goal is to help diagnose lung cancer, breast cancer, prostate cancer, colon 
 ## Demo
 
 <img src="./img-readme/Screenshot 2024-10-09 150838.png" width="600">
-<img src="./img-readme/Screenshot 2024-10-11 171846.png" width="600">
 <img src="./img-readme/Screenshot 2024-10-15 195936.png" width="600">
+<img src="./img-readme/Screenshot 2024-10-11 171846.png" width="600">
