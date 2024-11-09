@@ -1,39 +1,34 @@
-<br>
 <p align="center">
-    <img src="smn-logo2.svg" width="300"/>
+    <img src="./img-readme/solution6.ico" width="250"/>
 </p>
 <br>
 <div align="center">
-<img alt="smn" src="https://img.shields.io/badge/SMN-F7DF1E">
-<img alt="tg-loerrach" src="https://img.shields.io/badge/Peharge-red">
+
+<img alt="SMON" src="https://img.shields.io/badge/Solution-MedicalNetwork-blue">
+<img alt="Peharge" src="https://img.shields.io/badge/Peharge-8A2BE2">
 <br>
 <br>
 
-<img alt="" src="https://img.shields.io/badge/Python-3.11 / 3.12 / 3.13-blue?&logo=Python&logoColor=white%5BPython">
+<img alt="" src="https://img.shields.io/badge/Python-3.13-blue?&logo=Python&logoColor=white%5BPython">
 <img alt="" src="https://img.shields.io/badge/-C++-blue?logo=cplusplus">
 <img alt="" src="https://img.shields.io/badge/-C-blue?logo=c">
 <br>
 <br>
 
-<img alt="" src="https://img.shields.io/badge/PyTorch-EE4C2C?logo=PyTorch&logoColor=white">
-<img alt="" src="https://img.shields.io/badge/FLask-F7DF1E?style=flat&logo=flask&logoColor=black">
-<img alt="" src="https://img.shields.io/badge/PyCharm-black?logo=PyCharm&logoColor=white">
-<img alt="" src="https://img.shields.io/badge/GitHub-black?logo=github">
-<br>
-<br>
-
-<img alt="" src="https://img.shields.io/badge/os-linux%20%7C%20macOS%20%7C%20windows-blue">
-<br>
-<br>
-
-<img alt="" src="https://img.shields.io/badge/-Hugging Face-FDEE21?logo=HuggingFace&logoColor=black">
-<img alt="" src="https://img.shields.io/badge/Jupyter notebook-orange">
-<img alt="" src="https://img.shields.io/badge/Google Colab-red">
+<img alt="" src="https://img.shields.io/badge/Jupyter-notebook-brightgreen">
+<img alt="" src="https://img.shields.io/badge/Google-Colab-red">
+<img alt="" src="https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Spaces-blue">
 <br>
 <br>
 
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 <br>
+
+[![MONAI](https://img.shields.io/badge/-MONAI-blue)](https://monai.io/)
+[![PyPI version](https://badge.fury.io/py/monai.svg)](https://badge.fury.io/py/monai)
+[![docker](https://img.shields.io/badge/docker-pull-green.svg?logo=docker&logoColor=white)](https://hub.docker.com/r/projectmonai/monai)
+[![conda](https://img.shields.io/conda/vn/conda-forge/monai?color=green)](https://anaconda.org/conda-forge/monai)
+
 </div>
 
 # Solution-Medical-Network
@@ -42,3 +37,18 @@
   
 This project works with the GP-LSTM-GRU-T-IQ parameter and aims to obtain images from various imaging techniques such as X-ray (classic X-ray), CT (computed tomography), MRI (magnetic resonance imaging), PET (positron emission tomography), DEXA (dual-energy X-ray absorptiometry) and fluoroscopy (interventional radiology).
 The goal is to help diagnose lung cancer, breast cancer, prostate cancer, colon cancer, leukemia, skin cancer, pancreatic cancer, kidney cancer, cervical cancer, brain tumors, liver cancer, esophageal cancer, thyroid cancer, bladder cancer, stomach cancer and other cancers.
+
+## News
+
+- **[2024.10.04]** Start ;-)
+- **[2024.11.09]** Start on Github ;-)
+
+## Inhaltsverzeichnis
+
+---
+
+## Demo
+
+<img src="./img-readme/Screenshot 2024-10-09 150838.png" width="600">
+<img src="./img-readme/Screenshot 2024-10-11 171846.png" width="600">
+<img src="./img-readme/Screenshot 2024-10-15 195936.png" width="600">
