@@ -42,10 +42,17 @@ The goal is to help diagnose lung cancer, breast cancer, prostate cancer, colon 
 
 - **[2024.10.04]** Start ;-)
 - **[2024.11.09]** Start on Github ;-)
+- **[2025.01.01]** New Updates - aka. new start ;-)
 
 ## Inhaltsverzeichnis
 
 ---
+
+## Updates 
+
+### SMN 1 EAP
+
+> 2025.04.01
 
 ## Demo
 
