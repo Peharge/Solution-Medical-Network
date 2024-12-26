@@ -31,7 +31,7 @@
 
 </div>
 
-# Solution-Medical-Network
+# Solution-Medical-Network [soon]
 
 **🚨 IMPORTANT: NOT PUBLIC YET!!! 🚨**
   
