@@ -31,7 +31,7 @@
 
 </div>
 
-# Solution-Medical-Network [SMN]
+# Solution-Medical-Network (SMN)
 
 **🚨 IMPORTANT: NOT PUBLIC YET!!! 🚨**
   
