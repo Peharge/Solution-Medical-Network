@@ -50,7 +50,7 @@ The goal is to help diagnose lung cancer, breast cancer, prostate cancer, colon 
 
 ## Updates 
 
-### SMN 1 EAP
+### SMN 1 EAP [soon]
 
 > 2025.04.01
 
