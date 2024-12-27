@@ -56,6 +56,12 @@ The goal is to help diagnose lung cancer, breast cancer, prostate cancer, colon 
 
 > 2025.04.01
 
+## _Demo_
+
+<img src="./img-readme/Screenshot 2024-10-09 150838.png" width="600">
+<img src="./img-readme/Screenshot 2024-10-15 195936.png" width="600">
+<img src="./img-readme/Screenshot 2024-10-11 171846.png" width="600">
+
 ## Installation
 
 1. Klone das Repository:
@@ -350,9 +356,3 @@ Krebs ist eine komplexe Gruppe von Krankheiten, die durch unkontrolliertes Zellw
 - **Beschreibung**: Beginnt in der Magenschleimhaut und wird oft durch Helicobacter-pylori-Infektionen oder eine salzreiche Ernährung begünstigt.
 - **Risikofaktoren**: Rauchen, familiäre Veranlagung, ungesunde Ernährung.
 - **Symptome**: Bauchschmerzen, Übelkeit, Appetitverlust, Gewichtsverlust.
-
-## _Demo_
-
-<img src="./img-readme/Screenshot 2024-10-09 150838.png" width="600">
-<img src="./img-readme/Screenshot 2024-10-15 195936.png" width="600">
-<img src="./img-readme/Screenshot 2024-10-11 171846.png" width="600">
