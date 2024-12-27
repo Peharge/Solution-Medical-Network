@@ -31,7 +31,9 @@
 
 </div>
 
-# _Solution-Medical-Network (SMN)_
+# _SIMON_
+
+> _Solution-Intelligence-Medical-Open-Network_
 
 **🚨 IMPORTANT: NOT PUBLIC YET!!! 🚨**
   
@@ -47,6 +49,52 @@ The goal is to help diagnose lung cancer, breast cancer, prostate cancer, colon 
 ## _Inhaltsverzeichnis_
 
 ---
+
+## Installation
+
+1. Klone das Repository:
+    ```bash
+    git https://github.com/Peharge/SIMON
+    ```
+2. Navigiere in das Projektverzeichnis:
+    ```bash
+    cd SIMON
+    ```
+3. Installiere die notwendigen Abhängigkeiten (falls erforderlich):
+    ```bash
+    npm install
+    ```
+4. Starte das Projekt:
+    ```bash
+    npm start
+    ```
+
+## Benutzung
+
+- Stelle sicher, dass alle Abhängigkeiten installiert sind.
+- Verwende den folgenden Befehl, um Tests auszuführen:
+    ```bash
+    npm test
+    ```
+  
+## Checkliste
+
+Hier ist die To-Do-Liste für die wichtigsten Tools und Aufgaben im Projekt:
+
+## Aufgaben
+
+| **Task** | **Beschreibung**                                                                                                                                                                                                      | **Status** |
+|----------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------|
+| Task 1   | Problem mit der Installation von monailabel: ```pip install monailabel``` <br/> Anleitung: https://docs.monai.io/projects/label/en/latest/quickstart.html#deepedit-annotation-with-3d-slicer                          | ✔️         |
+| Task 2   | Zugriff auf die Datenbank: https://cdas.cancer.gov/nlst/                                                                                                                                                              | ❌         |
+| Task 3   | Test Datenbaken: <br> Task09_Spleen(+1.5GB): ```monailabel datasets --download --name Task09_Spleen --output .``` <br> Task09_Spleen(+7GB): ```monailabel datasets --download --name Task01_BrainTumour --output .``` | 🔄         |
+| Task 4   | Testen von ```pip install monai-deploy-app-sdk```                                                                                                                                                                     | ❌         |
+| Task 5   | Testen von https://monai.io/model-zoo.html                                                                                                                                                                            | 🔄         |
+| Task 6   | Problem mit MONAILabel Server, mit neuen Daten und Modellen.                                                                                                                                                          | 🔄         |
+
+Nicht erledigt ❌ | Erledigt (min. 1 Monat) ✔️ | Verbesserungen nötig 🔧 | In Bearbeitung 🔄 | Verbesserungen erforderlich ⚠️
+
+> Hinweis: Hey Mathis, du kannst hier immer Anmerkungen oder Probleme hinzufügen und Abharken. (User: Julian)
 
 ## _Updates_
 
