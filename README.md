@@ -79,8 +79,24 @@ The goal is to help diagnose lung cancer, breast cancer, prostate cancer, colon 
 
 - Stelle sicher, dass alle Abhängigkeiten installiert sind.
 - Verwende den folgenden Befehl, um Tests auszuführen:
+  
     ```bash
-    npm test
+    # install MONAI Label
+    pip install monailabel
+    
+    # download Radiology sample app to local directory
+    monailabel apps --name radiology --download --output .
+    
+    # download Task 2 MSD dataset
+    monailabel datasets --download --name Task09_Spleen --output .
+    
+    # start the Radiology app in MONAI label server
+    # and start annotating the downloaded images using deepedit model
+    monailabel start_server --app radiology --studies Task09_Spleen/imagesTr --conf models deepedit
+    ```
+  
+    ```bash
+    monailabel start_server --app monaibundle --studies Task09_Spleen/imagesTr --conf models renalStructures_UNEST_segmentation
     ```
   
 ## Checkliste
