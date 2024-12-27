@@ -31,30 +31,30 @@
 
 </div>
 
-# Solution-Medical-Network (SMN)
+# _Solution-Medical-Network (SMN)_
 
 **🚨 IMPORTANT: NOT PUBLIC YET!!! 🚨**
   
 This project works with the GP-LSTM-GRU-T-IQ parameter and aims to obtain images from various imaging techniques such as X-ray (classic X-ray), CT (computed tomography), MRI (magnetic resonance imaging), PET (positron emission tomography), DEXA (dual-energy X-ray absorptiometry) and fluoroscopy (interventional radiology).
 The goal is to help diagnose lung cancer, breast cancer, prostate cancer, colon cancer, leukemia, skin cancer, pancreatic cancer, kidney cancer, cervical cancer, brain tumors, liver cancer, esophageal cancer, thyroid cancer, bladder cancer, stomach cancer and other cancers.
 
-## News
+## _News_
 
 - **[2024.10.04]** Start ;-)
 - **[2024.11.09]** Start on Github ;-)
 - **[2025.01.01]** New Updates - aka. new start ;-)
 
-## Inhaltsverzeichnis
+## _Inhaltsverzeichnis_
 
 ---
 
-## Updates 
+## _Updates_
 
-### SMN 1 EAP [soon]
+### _SMN 1 EAP [soon]_
 
 > 2025.04.01
 
-## Demo
+## _Demo_
 
 <img src="./img-readme/Screenshot 2024-10-09 150838.png" width="600">
 <img src="./img-readme/Screenshot 2024-10-15 195936.png" width="600">
