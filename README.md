@@ -90,15 +90,15 @@ The goal is to help diagnose lung cancer, breast cancer, prostate cancer, colon 
 
    To successfully install MAVIS, you need the following programs:
 
-1. **Git**
+1. **Git**<br>
    Download [Git](https://git-scm.com/) from the official website:
    [https://git-scm.com](https://git-scm.com)
 
-2. **Python**
+2. **Python**<br>
    - Download [Python](https://www.python.org/) from the [https://www.python.org](https://www.python.org) or via the [Microsoft Store](https://apps.microsoft.com/).
    > Recommended: **Python 3.13** (3.12 or 3.11 are also supported).
 
-3. **Python development environment (IDE) (but not required)**
+3. **Python development environment (IDE) (but not required)**<br>
    A suitable IDE makes developing and working with Python easier. Recommended options:
    - [Visual Studio Code](https://code.visualstudio.com/) (VS Code for short) is a free source code editor from Microsoft.<br>
    Download: [https://code.visualstudio.com](https://code.visualstudio.com)
@@ -106,30 +106,30 @@ The goal is to help diagnose lung cancer, breast cancer, prostate cancer, colon 
    Download: [https://www.jetbrains.com/de-de/pycharm/](https://www.jetbrains.com/de-de/pycharm/)
    > *Note:* PyCharm offers advanced features for Python development and is particularly suitable for advanced users.
 
-4. **3D Slicer**
+4. **3D Slicer**<br>
     This project uses [3D Slicer](https://www.slicer.org/), which is a free and open source software package for image analysis and scientific visualization.
     - [https://download.slicer.org/](https://download.slicer.org/)
 
 ### Installation
 
-1. **Clone repository**
+1. **Clone repository**<br>
    Clone the repository to a local directory:
     ```bash
     git clone https://github.com/Peharge/SIMON
     ```
-2. **Change directory**
+2. **Change directory**<br>
    Navigate to the project directory:
     ```bash
     cd SIMON
     ```
-3. **Create Python virtual environment**
+3. **Create Python virtual environment**<br>
    Set up a virtual environment to install dependencies in isolation:
     ```bash
     python -m venv venv
     ```
    *(You can replace `venv` with any other name.)*
 
-4. **Activate virtual environment**
+4. **Activate virtual environment**<br>
    Activate the virtual environment:
    - **For CMD**:
        ```bash
@@ -140,7 +140,7 @@ The goal is to help diagnose lung cancer, breast cancer, prostate cancer, colon 
        .\venv\Scripts\Activate
        ```
 
-5. Installiere die notwendigen Abhängigkeiten (falls erforderlich):
+5. Installiere die notwendigen Abhängigkeiten (falls erforderlich):<br>
     ```bash
     pip install monai
     pip install monailabel
