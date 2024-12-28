@@ -141,7 +141,7 @@ The goal is to help diagnose lung cancer, breast cancer, prostate cancer, colon 
        ```
 
 5. Install the necessary dependencies (if required):<br>
-    [MONAI.com](https://monai.io/) - [MONAI GitHub](https://github.com/Project-MONAI/MONAI) - [MONAI Label.com](https://monai.io/label.html) - [MONAI Label GitHub](https://github.com/Project-MONAI/MONAILabel) - [MONAI Model Zoo.com](https://monai.io/model-zoo.html) - [MONAI Model Zoo GitHub](https://github.com/Project-MONAI/model-zoo) 
+    [MONAI.com](https://monai.io/) - [MONAI GitHub](https://github.com/Project-MONAI/MONAI) - [MONAI Label.com](https://monai.io/label.html) - [MONAI Label GitHub](https://github.com/Project-MONAI/MONAILabel) - [MONAI Model Zoo.com](https://monai.io/model-zoo.html) - [MONAI Model Zoo GitHub](https://github.com/Project-MONAI/model-zoo) - [MONAI Tutorials GitHub](https://github.com/Project-MONAI/tutorials/tree/main)
     ```bash
     pip install monai
     pip install monailabel
