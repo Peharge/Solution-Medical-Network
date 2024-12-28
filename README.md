@@ -48,37 +48,95 @@ The goal is to help diagnose lung cancer, breast cancer, prostate cancer, colon 
 
 ## _Inhaltsverzeichnis_
 
+- [Updates](#updates)
+- [Demo](#demo)
+- [Installation](#installation)
+- [Benutzung](#benutzung)
+- [Checkliste](#checkliste)
+- [Transformer](#transformer)
+- [Medizinische Infos](#medizinische-infos)
+- [Bücher](#bücher)
+- [MONAI-Results](#monai-results)
+- [Contributing](#contributing)
+- [Lizenz](#lizenz)
+
 ---
 
-## _Updates_
+## Updates
 
-### _SMN 1 EAP [soon]_
+### _SMN 1.0 EAP [soon]_
 
 > 2025.04.01
 
-## _Demo_
+## Demo
 
-<img src="./img-readme/Screenshot 2024-10-09 150838.png" width="600">
-<img src="./img-readme/Screenshot 2024-10-15 195936.png" width="600">
-<img src="./img-readme/Screenshot 2024-10-11 171846.png" width="600">
+<img src="./img-readme/Screenshot 2024-10-09 150838.png" width="1400">
+<img src="./img-readme/Screenshot 2024-10-15 195936.png" width="1400">
+<img src="./img-readme/Screenshot 2024-10-11 171846.png" width="1400">
 
 ## Installation
 
-1. Klone das Repository:
+> ⚠️**Still in progress**⚠️
+
+  **MAVIS (aka Xc++ 2)** is currently under development and is not fully available in this repository. Cloning the repository will only give you the README file, some images and already released codes, including the user interface (UI) compatible with **Qwen 2.5 Code** and **Llama 3.2 Vision**.
+
+### Prerequisites
+
+   To successfully install MAVIS, you need the following programs:
+
+1. **Git**
+   Download Git from the official website:
+   [https://git-scm.com](https://git-scm.com)
+
+2. **Python**
+   - Recommended: **Python 3.13** (3.12 or 3.11 are also supported).
+   - Download Python from the [https://www.python.org](https://www.python.org) or via the Microsoft Store.
+
+3. **Python development environment (IDE) (but not required)**
+   A suitable IDE makes developing and working with Python easier. Recommended options:
+   - **Visual Studio Code (free)**: [https://code.visualstudio.com](https://code.visualstudio.com)
+   - **PyCharm (paid)**: [https://www.jetbrains.com/de-de/pycharm/](https://www.jetbrains.com/de-de/pycharm/)
+   *Note:* PyCharm offers advanced features for Python development and is particularly suitable for advanced users.
+
+### Installation
+
+1. **Clone repository**
+   Clone the repository to a local directory:
     ```bash
-    git https://github.com/Peharge/SIMON
+    git clone https://github.com/Peharge/SIMON
     ```
-2. Navigiere in das Projektverzeichnis:
+2. **Change directory**
+   Navigate to the project directory:
     ```bash
     cd SIMON
     ```
-3. Installiere die notwendigen Abhängigkeiten (falls erforderlich):
+3. **Create Python virtual environment**
+   Set up a virtual environment to install dependencies in isolation:
     ```bash
-    npm install
+    python -m venv venv
     ```
-4. Starte das Projekt:
+   *(You can replace `venv` with any other name.)*
+
+4. **Activate virtual environment**
+   Activate the virtual environment:
+   - **For CMD**:
+       ```bash
+       venv\Scripts\activate
+       ```
+   - **For PowerShell**:
+       ```bash
+       .\venv\Scripts\Activate
+       ```
+
+5. Installiere die notwendigen Abhängigkeiten (falls erforderlich):
     ```bash
-    npm start
+    pip install monai
+    pip install monailabel
+    ```
+    or
+    ```bash
+    pip install monai[all]
+    pip install monailabel
     ```
 
 ## Benutzung
@@ -100,7 +158,9 @@ The goal is to help diagnose lung cancer, breast cancer, prostate cancer, colon 
     # and start annotating the downloaded images using deepedit model
     monailabel start_server --app radiology --studies Task09_Spleen/imagesTr --conf models deepedit
     ```
-  
+
+    and
+
     ```bash
     # install MONAI Label
     pip install monailabel
