@@ -91,18 +91,24 @@ The goal is to help diagnose lung cancer, breast cancer, prostate cancer, colon 
    To successfully install MAVIS, you need the following programs:
 
 1. **Git**
-   Download Git from the official website:
+   Download [Git](https://git-scm.com/) from the official website:
    [https://git-scm.com](https://git-scm.com)
 
 2. **Python**
-   - Recommended: **Python 3.13** (3.12 or 3.11 are also supported).
-   - Download Python from the [https://www.python.org](https://www.python.org) or via the Microsoft Store.
+   - Download [Python](https://www.python.org/) from the [https://www.python.org](https://www.python.org) or via the [Microsoft Store](https://apps.microsoft.com/).
+   > Recommended: **Python 3.13** (3.12 or 3.11 are also supported).
 
 3. **Python development environment (IDE) (but not required)**
    A suitable IDE makes developing and working with Python easier. Recommended options:
-   - **Visual Studio Code (free)**: [https://code.visualstudio.com](https://code.visualstudio.com)
-   - **PyCharm (paid)**: [https://www.jetbrains.com/de-de/pycharm/](https://www.jetbrains.com/de-de/pycharm/)
-   *Note:* PyCharm offers advanced features for Python development and is particularly suitable for advanced users.
+   - [Visual Studio Code](https://code.visualstudio.com/) (VS Code for short) is a free source code editor from Microsoft.<br>
+   Download: [https://code.visualstudio.com](https://code.visualstudio.com)
+   - [PyCharm](https://www.jetbrains.com/pycharm/) is an integrated development environment (IDE) from the Czech company JetBrains for the Python programming language.<br>
+   Download: [https://www.jetbrains.com/de-de/pycharm/](https://www.jetbrains.com/de-de/pycharm/)
+   > *Note:* PyCharm offers advanced features for Python development and is particularly suitable for advanced users.
+
+4. **3D Slicer**
+    This project uses [3D Slicer](https://www.slicer.org/), which is a free and open source software package for image analysis and scientific visualization.
+    - [https://download.slicer.org/](https://download.slicer.org/)
 
 ### Installation
 
