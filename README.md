@@ -95,16 +95,16 @@ The goal is to help diagnose lung cancer, breast cancer, prostate cancer, colon 
    [https://git-scm.com](https://git-scm.com)
 
 2. **Python**<br>
-   - Download [Python](https://www.python.org/) from the [https://www.python.org](https://www.python.org) or via the [Microsoft Store](https://apps.microsoft.com/).
-   > Recommended: **Python 3.13** (3.12 or 3.11 are also supported).
+   - Download [Python](https://www.python.org/) from the [https://www.python.org](https://www.python.org) or via the [Microsoft Store](https://apps.microsoft.com/).<br>
+   _Recommended: **Python 3.13** (3.12 or 3.11 are also supported)._
 
 3. **Python development environment (IDE) (but not required)**<br>
    A suitable IDE makes developing and working with Python easier. Recommended options:
    - [Visual Studio Code](https://code.visualstudio.com/) (VS Code for short) is a free source code editor from Microsoft.<br>
    Download: [https://code.visualstudio.com](https://code.visualstudio.com)
    - [PyCharm](https://www.jetbrains.com/pycharm/) is an integrated development environment (IDE) from the Czech company JetBrains for the Python programming language.<br>
-   Download: [https://www.jetbrains.com/de-de/pycharm/](https://www.jetbrains.com/de-de/pycharm/)
-   > *Note:* PyCharm offers advanced features for Python development and is particularly suitable for advanced users.
+   Download: [https://www.jetbrains.com/de-de/pycharm/](https://www.jetbrains.com/de-de/pycharm/)<br>
+   _**Note:** PyCharm offers advanced features for Python development and is particularly suitable for advanced users._
 
 4. **3D Slicer**<br>
     This project uses [3D Slicer](https://www.slicer.org/), which is a free and open source software package for image analysis and scientific visualization.
