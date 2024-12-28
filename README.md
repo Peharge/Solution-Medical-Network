@@ -211,7 +211,6 @@ The goal is to help diagnose lung cancer, breast cancer, prostate cancer, colon 
     monailabel datasets --download --name Task09_Spleen --output datasets
     ```
     2.3 Starting MONAI Label Server
-    
     Specify the bundle name in ```--conf models <BUNDLENAME>``` argument.
  
     **Deepedit:**
