@@ -57,14 +57,14 @@ The goal is to help diagnose lung cancer, breast cancer, prostate cancer, colon 
 - [Updates](#updates)
 - [Demo](#demo)
 - [Installation](#installation)
-- [Benutzung](#benutzung)
-- [Checkliste](#checkliste)
+- [Usage](#usage)
+- [Checklist](#checklist)
 - [Transformer](#transformer)
-- [Medizinische Infos](#medizinische-infos)
-- [Bücher](#bücher)
+- [Medical information](#medical-information)
+- [Books](#books)
 - [MONAI-Results](#monai-results)
 - [Contributing](#contributing)
-- [Lizenz](#lizenz)
+- [License](#license)
 
 ---
 
@@ -140,7 +140,7 @@ The goal is to help diagnose lung cancer, breast cancer, prostate cancer, colon 
        .\venv\Scripts\Activate
        ```
 
-5. Installiere die notwendigen Abhängigkeiten (falls erforderlich):<br>
+5. Install the necessary dependencies (if required):<br>
     [MONAI.com](https://monai.io/) - [MONAI GitHub](https://github.com/Project-MONAI/MONAI) - [MONAI Label.com](https://monai.io/label.html) - [MONAI Label GitHub](https://github.com/Project-MONAI/MONAILabel) - [MONAI Model Zoo.com](https://monai.io/model-zoo.html) - [MONAI Model Zoo GitHub](https://github.com/Project-MONAI/model-zoo) 
     ```bash
     pip install monai
@@ -152,12 +152,14 @@ The goal is to help diagnose lung cancer, breast cancer, prostate cancer, colon 
     pip install monailabel
     ```
 
-## Benutzung
+## Usage
 
-- Stelle sicher, dass alle Abhängigkeiten installiert sind.
-- Verwende den folgenden Befehl, um Tests auszuführen:
+- Make sure all dependencies are installed.
+- Use the following command to run tests:
 
 1. **Radiology** ([Radiology](https://docs.nvidia.com/launchpad/ai/monai-label/latest/monai-radiology-app.html))<br>
+    1.1 Deploy MONAI Label Server<br>
+    On the local machine follow the commands listed below to install MONAI Label, download a sample application (Radiology), download a sample dataset (MSD heart MRI), and deploy the sample app and standard dataset on the MONAI Label server.<br>
     Download Radiology sample app to local directory
     ```bash
     monailabel apps --name radiology --download --output .
@@ -170,19 +172,48 @@ The goal is to help diagnose lung cancer, breast cancer, prostate cancer, colon 
     ```bach
     monailabel start_server --app radiology --studies Task09_Spleen/imagesTr --conf models deepedit
     ```
+    1.2 Annotating a Custom Dataset<br>
+    To annotate a custom dataset using DeepEdit, we can download the DeepEdit app as above, however, the dataset directory need not be populated. Follow the commands below to setup custom dataset annotation using the empty local directory my_dataset as the image and label storage location.<br>
+    Install MONAI Label
+    ```bach
+    pip install monailabel
+    ```
 
+    Download DeepEdit sample app to local directory
+    ```bach
+    monailabel apps --name radiology --download --output .
+    ```
+
+    Create an empty folder for the custom dataset
+    ```bach
+    mkdir my_dataset
+    ```
+
+    Start the DeepEdit app in MONAI label server on the empty dataset folder
+    ```bach
+    monailabel start_server --app radiology --studies my_dataset --conf models deepedit
+    ```
+   
 2. **Monaibundle** ([Monaibundle](https://github.com/Project-MONAI/tutorials/blob/main/monailabel/monailabel_monaibundle_3dslicer_multiorgan_seg.ipynb))<br>
-
-    Download monaibundle sample app to local directory
+    
+    2.1 Download monaibundle app<br>
+    Get and copy the monaibundle app using monailabel API
     ```bash
     monailabel apps --name monaibundle --download --output .
     ```
-    Download Task 2 MSD dataset
+    2.2 Download sample data<br>
+    The multi-organ segmentation task takes CT images as input. The bundle model Swin UNETR pre-trained weights are trained with Beyond The Cranial Vault (BTCV). In this tutorial, some sample CT images from MSD are used (for the purpose of app demonstration on Slicer 3D). Download MSD Task09 dataset as the sample dataset using monailabel API.
+
     ```bach
     monailabel datasets --download --name Task09_Spleen --output .
     ```
-    Start the monaibundle app in MONAI label server and start annotating the downloaded images using Deepedit, Renal Structures UNEST Segmentationmodel.<br>
+    ```bach
+    monailabel datasets --download --name Task09_Spleen --output datasets
+    ```
+    2.3 Starting MONAI Label Server
     
+    Specify the bundle name in ```--conf models <BUNDLENAME>``` argument.
+ 
     **Deepedit:**
     ```bach
     monailabel start_server --app monaibundle --studies Task09_Spleen/imagesTr --conf models deepedit
@@ -191,12 +222,66 @@ The goal is to help diagnose lung cancer, breast cancer, prostate cancer, colon 
     ```bash
     monailabel start_server --app monaibundle --studies Task09_Spleen/imagesTr --conf models renalStructures_UNEST_segmentation
     ```
+    **Spleen CT Segmentation:**
+    ```bash
+    monailabel start_server --app monaibundle --studies Task09_Spleen/imagesTr --conf models spleen_ct_segmentation
+    ```
+    **Supported Models:**
+    
+    | Bundle | Model | Objects | Modality | Note |
+    |:----:|:-----:|:-------:|:--------:|:----:|
+    | [spleen_ct_segmentation](https://github.com/Project-MONAI/model-zoo/tree/dev/models/spleen_ct_segmentation) | UNet | Spleen | CT | A model for (3D) segmentation of the spleen |
+    | [swin_unetr_btcv_segmentation](https://github.com/Project-MONAI/model-zoo/tree/dev/models/swin_unetr_btcv_segmentation) | SwinUNETR | Multi-Organ | CT | A model for (3D) multi-organ segmentation |
+    | [prostate_mri_anatomy](https://github.com/Project-MONAI/model-zoo/tree/dev/models/prostate_mri_anatomy) | UNet | Prostate | MRI | A model for (3D) prostate segmentation from MRI image |
+    | [pancreas_ct_dints_segmentation](https://github.com/Project-MONAI/model-zoo/tree/dev/models/pancreas_ct_dints_segmentation) | DiNTS | Pancreas/Tumor | CT | An automl method for (3D) pancreas/tumor segmentation |
+    | [renalStructures_UNEST_segmentation](https://github.com/Project-MONAI/model-zoo/tree/dev/models/renalStructures_UNEST_segmentation) | UNesT | Kidney Substructure | CT |  A pre-trained for inference (3D) kidney cortex/medulla/pelvis segmentation |
+    | [wholeBrainSeg_UNEST_segmentation](https://github.com/Project-MONAI/model-zoo/tree/dev/models/wholeBrainSeg_Large_UNEST_segmentation) | UNesT | Whole Brain | MRI T1 |  A pre-trained for inference (3D) 133 whole brain structures segmentation |
+    | [spleen_deepedit_annotation](https://github.com/Project-MONAI/model-zoo/tree/dev/models/spleen_deepedit_annotation) | DeepEdit | Spleen| CT | An interactive method for 3D spleen Segmentation |
+    | [lung_nodule_ct_detection](https://github.com/Project-MONAI/model-zoo/tree/dev/models/lung_nodule_ct_detection) | RetinaNet | Lung Nodule| CT | The detection model for 3D CT images |
+    | [wholeBody_ct_segmentation](https://github.com/Project-MONAI/model-zoo/tree/dev/models/wholeBody_ct_segmentation) | SegResNet | 104 body structures| CT | The segmentation model for 104 tissue from 3D CT images (TotalSegmentator Dataset) |
+
+   
+    1.4 (Optional) File Structure for monaibundle app<br>
+    To double check and confirm the correct monaibundle app and bundle files structure.
+
+    The directory tree structure should be:
+    ```
+    └── monaibundle\n
+        ├── __init__.py\n
+        ├── lib\n
+        │   ├── activelearning\n
+        │   │   └── __init__.py\n
+        │   ├── infers\n
+        │   │   └── __init__.py\n
+        │   ├── __init__.py\n
+        │   └── trainers\n
+        │       └── __init__.py\n
+        ├── main.py\n
+        ├── model\n
+        │   └── swin_unetr_btcv_segmentation_v0.3.9\n
+        │       ├── configs\n
+        │       │   ├── evaluate.json\n
+        │       │   ├── inference.json\n
+        │       │   ├── logging.conf\n
+        │       │   ├── metadata.json\n
+        │       │   ├── multi_gpu_train.json\n
+        │       │   └── train.json\n
+        │       ├── docs\n
+        │       │   ├── data_license.txt\n
+        │       │   └── README.md\n
+        │       ├── eval\n
+        │       ├── LICENSE\n
+        │       └── models\n
+        │           └── model.pt\n
+        ├── README.md\n
+        └── requirements.txt\n
+    ```
   
-## Checkliste
+## Checklist
 
-Hier ist die To-Do-Liste für die wichtigsten Tools und Aufgaben im Projekt:
+Here is the to-do list for the most important tools and tasks in the project:
 
-## Aufgaben
+## Tasks
 
 | **Task** | **Beschreibung**                                                                                                                                                                                                      | **Status** |
 |----------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------|
@@ -207,9 +292,9 @@ Hier ist die To-Do-Liste für die wichtigsten Tools und Aufgaben im Projekt:
 | Task 5   | Testen von https://monai.io/model-zoo.html                                                                                                                                                                            | 🔄         |
 | Task 6   | Problem mit MONAILabel Server, mit neuen Daten und Modellen.                                                                                                                                                          | 🔄         |
 
-Nicht erledigt ❌ | Erledigt (min. 1 Monat) ✔️ | Verbesserungen nötig 🔧 | In Bearbeitung 🔄 | Verbesserungen erforderlich ⚠️
+Not done ❌ | Done (min. 1 month) ✔️ | Improvements needed 🔧 | In progress 🔄 | Improvements needed ⚠️
 
-> Hinweis: Hey You, du kannst hier immer Anmerkungen oder Probleme hinzufügen und Abharken. (User: Julian)
+> Note: Hey you, you can always add and check off comments or problems here.
 
 
 ## Transformer
