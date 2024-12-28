@@ -9,25 +9,33 @@
 <br>
 <br>
 
-<img alt="" src="https://img.shields.io/badge/Python-3.13-blue?&logo=Python&logoColor=white%5BPython">
-<img alt="" src="https://img.shields.io/badge/-C++-blue?logo=cplusplus">
-<img alt="" src="https://img.shields.io/badge/-C-blue?logo=c">
+<img alt="python" src="https://img.shields.io/badge/Python-3.11 / 3.12 / 3.13-blue?&logo=Python&logoColor=white%5BPython">
+<img alt="c++" src="https://img.shields.io/badge/-C++-blue?logo=cplusplus">
+<img alt="c" src="https://img.shields.io/badge/-C-blue?logo=c">
 <br>
 <br>
 
+<img alt="pytorch" src="https://img.shields.io/badge/PyTorch-EE4C2C?logo=PyTorch&logoColor=white">
+<img alt="flask" src="https://img.shields.io/badge/FLask-F7DF1E?style=flat&logo=flask&logoColor=black">
+<img alt="pycharm" src="https://img.shields.io/badge/PyCharm-black?logo=PyCharm&logoColor=white">
 <img alt="" src="https://img.shields.io/badge/Jupyter-notebook-brightgreen">
 <img alt="" src="https://img.shields.io/badge/Google-Colab-red">
+<img alt="github" src="https://img.shields.io/badge/GitHub-black?logo=github">
 <img alt="" src="https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Spaces-blue">
 <br>
 <br>
 
-[![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+<img alt="os" src="https://img.shields.io/badge/os-linux%20%7C%20macOS%20%7C%20windows-blue">
+<br>
 <br>
 
 [![MONAI](https://img.shields.io/badge/-MONAI-blue)](https://monai.io/)
 [![PyPI version](https://badge.fury.io/py/monai.svg)](https://badge.fury.io/py/monai)
 [![docker](https://img.shields.io/badge/docker-pull-green.svg?logo=docker&logoColor=white)](https://hub.docker.com/r/projectmonai/monai)
 [![conda](https://img.shields.io/conda/vn/conda-forge/monai?color=green)](https://anaconda.org/conda-forge/monai)
+
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+<br>
 
 </div>
 
