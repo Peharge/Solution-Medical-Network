@@ -4,7 +4,7 @@
 <br>
 <div align="center">
 
-<img alt="SMON" src="https://img.shields.io/badge/Solution-SIMON-blue">
+<img alt="SIMON" src="https://img.shields.io/badge/Solution-SIMON-blue">
 <img alt="Peharge" src="https://img.shields.io/badge/Peharge-8A2BE2">
 <br>
 <br>
@@ -41,7 +41,7 @@
 
 # _SIMON_
 
-> _Solution-Intelligence-Medical-Open-Network_
+> **S** olution **I** ntelligence **M** edical **O** pen **N** etwork
 
 **🚨 IMPORTANT: NOT PUBLIC YET!!! 🚨**
   
