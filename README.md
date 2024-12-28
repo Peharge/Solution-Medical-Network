@@ -4,7 +4,7 @@
 <br>
 <div align="center">
 
-<img alt="SIMON" src="https://img.shields.io/badge/Solution-SIMON-blue">
+<img alt="SIMON" src="https://img.shields.io/badge/SIMON-blue">
 <img alt="Peharge" src="https://img.shields.io/badge/Peharge-8A2BE2">
 <br>
 <br>
