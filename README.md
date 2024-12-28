@@ -4,7 +4,7 @@
 <br>
 <div align="center">
 
-<img alt="SMON" src="https://img.shields.io/badge/Solution-MedicalNetwork-blue">
+<img alt="SMON" src="https://img.shields.io/badge/Solution-SIMON-blue">
 <img alt="Peharge" src="https://img.shields.io/badge/Peharge-8A2BE2">
 <br>
 <br>
@@ -16,7 +16,7 @@
 <br>
 
 <img alt="pytorch" src="https://img.shields.io/badge/PyTorch-EE4C2C?logo=PyTorch&logoColor=white">
-<img alt="flask" src="https://img.shields.io/badge/FLask-F7DF1E?style=flat&logo=flask&logoColor=black">
+<img alt="flask" src="https://img.shields.io/badge/django-092E20?logo=django&logoColor=white">
 <img alt="pycharm" src="https://img.shields.io/badge/PyCharm-black?logo=PyCharm&logoColor=white">
 <img alt="" src="https://img.shields.io/badge/Jupyter-notebook-brightgreen">
 <img alt="" src="https://img.shields.io/badge/Google-Colab-red">
