@@ -151,9 +151,6 @@ The goal is to help diagnose lung cancer, breast cancer, prostate cancer, colon 
 - Verwende den folgenden Befehl, um Tests auszuführen:
   
     ```bash
-    # install MONAI Label
-    pip install monailabel
-    
     # download Radiology sample app to local directory
     monailabel apps --name radiology --download --output .
     
@@ -168,9 +165,6 @@ The goal is to help diagnose lung cancer, breast cancer, prostate cancer, colon 
     and
 
     ```bash
-    # install MONAI Label
-    pip install monailabel
-    
     # download monaibundle sample app to local directory
     monailabel apps --name monaibundle --download --output .
     
