@@ -156,33 +156,38 @@ The goal is to help diagnose lung cancer, breast cancer, prostate cancer, colon 
 
 - Stelle sicher, dass alle Abhängigkeiten installiert sind.
 - Verwende den folgenden Befehl, um Tests auszuführen:
-  
+
+1. **Radiology** ([Radiology](https://docs.nvidia.com/launchpad/ai/monai-label/latest/monai-radiology-app.html))<br>
+    Download Radiology sample app to local directory
     ```bash
-    # download Radiology sample app to local directory
     monailabel apps --name radiology --download --output .
-    
-    # download Task 2 MSD dataset
+    ```
+    Download Task 2 MSD dataset
+    ```bach
     monailabel datasets --download --name Task09_Spleen --output .
-    
-    # start the Radiology app in MONAI label server
-    # and start annotating the downloaded images using deepedit model
+    ```
+    Start the Radiology app in MONAI label server and start annotating the downloaded images using deepedit model
+    ```bach
     monailabel start_server --app radiology --studies Task09_Spleen/imagesTr --conf models deepedit
     ```
 
-    and
+2. **Monaibundle** ([Monaibundle](https://github.com/Project-MONAI/tutorials/blob/main/monailabel/monailabel_monaibundle_3dslicer_multiorgan_seg.ipynb))<br>
 
+    Download monaibundle sample app to local directory
     ```bash
-    # download monaibundle sample app to local directory
     monailabel apps --name monaibundle --download --output .
-    
-    # download Task 2 MSD dataset
+    ```
+    Download Task 2 MSD dataset
+    ```bach
     monailabel datasets --download --name Task09_Spleen --output .
+    ```
+    Start the monaibundle app in MONAI label server and start annotating the downloaded images using Deepedit, Renal Structures UNEST Segmentationmodel.<br>
     
-    # start the monaibundle app in MONAI label server
-    # and start annotating the downloaded images using deepedit model
+    **Deepedit:**
+    ```bach
     monailabel start_server --app monaibundle --studies Task09_Spleen/imagesTr --conf models deepedit
     ```
-  
+    **Renal Structures UNEST Segmentationmodel:**
     ```bash
     monailabel start_server --app monaibundle --studies Task09_Spleen/imagesTr --conf models renalStructures_UNEST_segmentation
     ```
