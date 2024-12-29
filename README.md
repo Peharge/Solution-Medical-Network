@@ -289,23 +289,25 @@ The goal is to help diagnose lung cancer, breast cancer, prostate cancer, colon 
 
 From 2024
 
-<img src="./img-readme/output.png" width="200">
-<img src="./img-readme/output2.png" width="200">
-<img src="./img-readme/output3.png" width="200">
-<img src="./img-readme/output4.png" width="200">
-<img src="./img-readme/output5.png" width="200">
-<img src="./img-readme/output6.png" width="200">
-<img src="./img-readme/output7.png" width="200">
-<img src="./img-readme/output8.png" width="200">
-<img src="./img-readme/output9.png" width="200">
-<img src="./img-readme/output10.png" width="200">
-<img src="./img-readme/output11.png" width="200">
-<img src="./img-readme/output12.png" width="200">
-<img src="./img-readme/output13.png" width="200">
-<img src="./img-readme/output14.png" width="200">
-<img src="./img-readme/output15.png" width="200">
-<img src="./img-readme/output16.png" width="200">
-<img src="./img-readme/output17.png" width="200">
+<div class="gallery">
+    <img src="./img-readme/output.png" alt="Bild 1" width="200">
+    <img src="./img-readme/output2.png" alt="Bild 2" width="200">
+    <img src="./img-readme/output3.png" alt="Bild 3" width="200">
+    <img src="./img-readme/output4.png" alt="Bild 4" width="200">
+    <img src="./img-readme/output5.png" alt="Bild 5" width="200">
+    <img src="./img-readme/output6.png" alt="Bild 6" width="200">
+    <img src="./img-readme/output7.png" alt="Bild 7" width="200">
+    <img src="./img-readme/output8.png" alt="Bild 8" width="200">
+    <img src="./img-readme/output9.png" alt="Bild 9" width="200">
+    <img src="./img-readme/output10.png" alt="Bild 10" width="200">
+    <img src="./img-readme/output11.png" alt="Bild 11" width="200">
+    <img src="./img-readme/output12.png" alt="Bild 12" width="200">
+    <img src="./img-readme/output13.png" alt="Bild 13" width="200">
+    <img src="./img-readme/output14.png" alt="Bild 14" width="200">
+    <img src="./img-readme/output15.png" alt="Bild 15" width="200">
+    <img src="./img-readme/output16.png" alt="Bild 16" width="200">
+    <img src="./img-readme/output17.png" alt="Bild 17" width="200">
+</div>
 
 From 2025
 
