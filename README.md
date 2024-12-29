@@ -293,12 +293,11 @@ Here is the to-do list for the most important tools and tasks in the project:
 
 | **Task** | **Beschreibung**                                                                                                                                                                                                      | **Status** |
 |----------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------|
-| Task 1   | Problem mit der Installation von monailabel: ```pip install monailabel``` <br/> Anleitung: https://docs.monai.io/projects/label/en/latest/quickstart.html#deepedit-annotation-with-3d-slicer                          | ✔️         |
-| Task 2   | Zugriff auf die Datenbank: https://cdas.cancer.gov/nlst/                                                                                                                                                              | ❌         |
-| Task 3   | Test Datenbaken: <br> Task09_Spleen(+1.5GB): ```monailabel datasets --download --name Task09_Spleen --output .``` <br> Task09_Spleen(+7GB): ```monailabel datasets --download --name Task01_BrainTumour --output .``` | 🔄         |
-| Task 4   | Testen von ```pip install monai-deploy-app-sdk```                                                                                                                                                                     | ❌         |
-| Task 5   | Testen von https://monai.io/model-zoo.html                                                                                                                                                                            | 🔄         |
-| Task 6   | Problem mit MONAILabel Server, mit neuen Daten und Modellen.                                                                                                                                                          | 🔄         |
+| Task 1   | Zugriff auf die Datenbank: https://cdas.cancer.gov/nlst/                                                                                                                                                              | ❌         |
+| Task 2   | Test Datenbaken: <br> Task09_Spleen(+1.5GB): ```monailabel datasets --download --name Task09_Spleen --output .``` <br> Task09_Spleen(+7GB): ```monailabel datasets --download --name Task01_BrainTumour --output .``` | 🔄         |
+| Task 3   | Testen von ```pip install monai-deploy-app-sdk```                                                                                                                                                                     | ❌         |
+| Task 4   | Testen von https://monai.io/model-zoo.html                                                                                                                                                                            | 🔄         |
+| Task 5   | Problem mit MONAILabel Server, mit neuen Daten und Modellen.                                                                                                                                                          | 🔄         |
 
 Not done ❌ | Done (min. 1 month) ✔️ | Improvements needed 🔧 | In progress 🔄 | Improvements needed ⚠️
 
