@@ -57,9 +57,9 @@ The goal is to help diagnose lung cancer, breast cancer, prostate cancer, colon 
 ## _Inhaltsverzeichnis_
 
 - [Updates](#updates)
-- [Demo](#demo)
 - [Installation](#installation)
 - [Usage](#usage)
+- [Demo](#demo)
 - [Checklist](#checklist)
 - [Transformer](#transformer)
 - [Medical information](#medical-information)
@@ -76,7 +76,7 @@ The goal is to help diagnose lung cancer, breast cancer, prostate cancer, colon 
 
 > 2025.04.01
 
-## Demo
+### Demo
 
 <img src="./img-readme/Screenshot 2024-10-09 150838.png" width="1400">
 <img src="./img-readme/Screenshot 2024-10-15 195936.png" width="1400">
@@ -284,6 +284,32 @@ The goal is to help diagnose lung cancer, breast cancer, prostate cancer, colon 
 
     <img src="./img-readme/colorized and ssao demo.jpeg" width="1400">
     <img src="./img-readme/colorized and ssao demo3.jpeg" width="1400">
+
+## Demo
+
+From 2024
+
+<img src="./img-readme/output.png" width="200">
+<img src="./img-readme/output2.png" width="200">
+<img src="./img-readme/output3.png" width="200">
+<img src="./img-readme/output4.png" width="200">
+<img src="./img-readme/output5.png" width="200">
+<img src="./img-readme/output6.png" width="200">
+<img src="./img-readme/output7.png" width="200">
+<img src="./img-readme/output8.png" width="200">
+<img src="./img-readme/output9.png" width="200">
+<img src="./img-readme/output10.png" width="200">
+<img src="./img-readme/output11.png" width="200">
+<img src="./img-readme/output12.png" width="200">
+<img src="./img-readme/output13.png" width="200">
+<img src="./img-readme/output14.png" width="200">
+<img src="./img-readme/output15.png" width="200">
+<img src="./img-readme/output16.png" width="200">
+<img src="./img-readme/output17.png" width="200">
+
+From 2025
+
+<img src="./img-readme/demo4.png" width="1400">
   
 ## Checklist
 
