@@ -280,7 +280,7 @@ The goal is to help diagnose lung cancer, breast cancer, prostate cancer, colon 
         └── requirements.txt\n
     ```
     
-    1.5 (Optional) + Sandbox (colorized + ssao)<br>
+    1.5 (Optional) + Sandbox (Colorized + SSAO)<br>
 
     <img src="./img-readme/colorized and ssao demo.jpeg" width="1400">
     <img src="./img-readme/colorized and ssao demo3.jpeg" width="1400">
