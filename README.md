@@ -63,9 +63,6 @@ The goal is to help diagnose lung cancer, breast cancer, prostate cancer, colon 
 - [Checklist](#checklist)
 - [Transformer](#transformer)
 - [Medical information](#medical-information)
-- [Books](#books)
-- [MONAI-Results](#monai-results)
-- [Contributing](#contributing)
 - [License](#license)
 
 ---
@@ -424,135 +421,135 @@ BERT is conceptually simple and empirically powerful. It obtains new state-of-th
 **Link:** [arXiv:2212.04497](https://arxiv.org/abs/2212.04497)  <br>
 **Abstract:** Owing to the success of transformer models, recent works study their applicability in 3D medical segmentation tasks. Within the transformer models, the self-attention mechanism is one of the main building blocks that strives to capture long-range dependencies. However, the self-attention operation has quadratic complexity which proves to be a computational bottleneck, especially in volumetric medical imaging, where the inputs are 3D with numerous slices. In this paper, we propose a 3D medical image segmentation approach, named UNETR++, that offers both high-quality segmentation masks as well as efficiency in terms of parameters, compute cost, and inference speed. The core of our design is the introduction of a novel efficient paired attention (EPA) block that efficiently learns spatial and channel-wise discriminative features using a pair of inter-dependent branches based on spatial and channel attention. Our spatial attention formulation is efficient having linear complexity with respect to the input sequence length. To enable communication between spatial and channel-focused branches, we share the weights of query and key mapping functions that provide a complimentary benefit (paired attention), while also reducing the overall network parameters. Our extensive evaluations on five benchmarks, Synapse, BTCV, ACDC, BRaTs, and Decathlon-Lung, reveal the effectiveness of our contributions in terms of both efficiency and accuracy. On Synapse, our UNETR++ sets a new state-of-the-art with a Dice Score of 87.2%, while being significantly efficient with a reduction of over 71% in terms of both parameters and FLOPs, compared to the best method in the literature.
 
-## Medizinische-Infos
+## Medical information
 
-### Medizinische Bildgebungsverfahren
+### Medical imaging procedures
 
-In der modernen Medizin werden verschiedene Bildgebungsverfahren eingesetzt, um detaillierte Einblicke in den menschlichen Körper zu ermöglichen. Diese Verfahren nutzen unterschiedliche Technologien und werden je nach Bedarf und Untersuchungsziel eingesetzt. Im Folgenden sind die gängigsten bildgebenden Verfahren beschrieben.
+In modern medicine, various imaging procedures are used to provide detailed insights into the human body. These procedures use different technologies and are used depending on the need and the purpose of the examination. The most common imaging procedures are described below.
 
-#### 1. Röntgen (klassisches Röntgen)
-- **Technologie**: Röntgenstrahlen (ionisierende Strahlung)
-- **Anwendung**: Häufig verwendet zur Darstellung von Knochenbrüchen, in der Mammographie, bei Zahnuntersuchungen oder zur Untersuchung des Thorax.
-- **Beispiele**:
-  - **Digitales Röntgen**: Moderne Form des Röntgens, bei der die Bilder digital erfasst und verarbeitet werden.
-  - **Mammographie**: Spezielle Röntgenuntersuchung zur Früherkennung von Brustkrebs.
+#### 1. X-ray (classic X-ray)
+- **Technology**: X-rays (ionizing radiation)
+- **Application**: Often used to show bone fractures, in mammography, for dental examinations or to examine the thorax.
+- **Examples**:
+- **Digital X-ray**: Modern form of X-ray in which the images are digitally captured and processed.
+- **Mammography**: Special X-ray examination for the early detection of breast cancer.
 
-#### 2. CT (Computertomographie)
-- **Technologie**: Verwendung von Röntgenstrahlen zur Erstellung von Querschnittsbildern des Körpers.
-- **Anwendung**: Liefert detailliertere Bilder als das klassische Röntgen. Häufig bei der Diagnose von Tumoren, Blutungen, Frakturen und inneren Verletzungen.
-- **Beispiel**: Der Patient wird auf einem Tisch in einen ringförmigen Scanner geschoben, der detaillierte 3D-Bilder des Körpers erzeugt.
+#### 2. CT (computer tomography)
+- **Technology**: Use of X-rays to create cross-sectional images of the body.
+- **Application**: Provides more detailed images than classic X-rays. Often used to diagnose tumors, bleeding, fractures and internal injuries.
+- **Example**: The patient is pushed on a table into a ring-shaped scanner that creates detailed 3D images of the body.
 
-#### 3. MRT (Magnetresonanztomographie)
-- **Technologie**: Nutzung von Magnetfeldern und Radiowellen anstelle von Röntgenstrahlen.
-- **Anwendung**: Besonders gut geeignet zur Untersuchung von Weichgeweben, wie z.B. Gehirn, Muskeln, Sehnen und inneren Organen.
+#### 3. MRI (magnetic resonance imaging)
+- **Technology**: Use of magnetic fields and radio waves instead of X-rays.
+- **Application**: Particularly suitable for examining soft tissues, such as the brain, muscles, tendons and internal organs.
 
-#### 4. PET (Positronen-Emissions-Tomographie)
-- **Technologie**: Verwendung von radioaktiven Substanzen, die in den Körper injiziert werden, um Stoffwechselvorgänge sichtbar zu machen.
-- **Anwendung**: Oft in Kombination mit CT oder MRT verwendet, um Tumore zu erkennen oder den Stoffwechsel zu analysieren, beispielsweise in der Krebsdiagnose.
+#### 4. PET (positron emission tomography)
+- **Technology**: Use of radioactive substances that are injected into the body to make metabolic processes visible.
+- **Application**: Often used in combination with CT or MRI to detect tumors or analyze metabolism, for example in cancer diagnosis.
 
 #### 5. DEXA (Dual-Energy X-ray Absorptiometry)
-- **Technologie**: Spezielle Art des Röntgens, die zwei verschiedene Energien verwendet, um die Knochendichte zu messen.
-- **Anwendung**: Häufig zur Diagnose von Osteoporose und zur Messung der Knochendichte.
+- **Technology**: Special type of X-ray that uses two different energies to measure bone density.
+- **Application**: Commonly used to diagnose osteoporosis and measure bone density.
 
-#### 6. Fluoroskopie
-- **Technologie**: Kontinuierliche Röntgenstrahlen ermöglichen die Echtzeit-Darstellung von Bewegungen im Körper.
-- **Anwendung**: Verwendet für dynamische Untersuchungen, wie z.B. in der Angiographie oder bei der Untersuchung des Magen-Darm-Trakts.
+#### 6. Fluoroscopy
+- **Technology**: Continuous X-rays allow real-time imaging of movements in the body.
+- **Application**: Used for dynamic examinations, such as in angiography or in examinations of the gastrointestinal tract.
 
-#### 7. Durchleuchtung (Interventionsradiologie)
-- **Technologie**: Verwendung von Röntgenstrahlen zur Durchführung minimalinvasiver Eingriffe unter visueller Kontrolle.
-- **Anwendung**: Häufig bei Eingriffen wie der Platzierung von Stents oder Biopsien unter Röntgenkontrolle eingesetzt.
+#### 7. Fluoroscopy (interventional radiology)
+- **Technology**: Use of X-rays to perform minimally invasive procedures under visual control.
+- **Application**: Commonly used in procedures such as stent placement or biopsies under X-ray control.
 
-### Überblick über Krebserkrankungen
+### Overview of Cancers
 
-Krebs ist eine komplexe Gruppe von Krankheiten, die durch unkontrolliertes Zellwachstum gekennzeichnet ist. Die Art des Krebses hängt von dem betroffenen Organ oder Gewebe ab. Diese Übersicht beschreibt die häufigsten Krebsarten, ihre Merkmale, Risikofaktoren und Symptome.
+Cancer is a complex group of diseases characterized by uncontrolled cell growth. The type of cancer depends on the organ or tissue affected. This overview describes the most common types of cancer, their characteristics, risk factors, and symptoms.
 
-#### 1. Lungenkrebs
-- **Beschreibung**: Lungenkrebs beginnt in der Lunge und wird in zwei Haupttypen unterteilt: 
-  - **Kleinzelliges Lungenkarzinom (SCLC)**: Ein aggressiver Krebs, der schnell wächst und sich früh ausbreitet.
-  - **Nicht-kleinzelliges Lungenkarzinom (NSCLC)**: Häufiger, wächst langsamer als SCLC.
-- **Risikofaktoren**: Rauchen, Passivrauchen, Radonexposition, Umweltgifte.
-- **Symptome**: Husten, Brustschmerzen, Atemnot, Gewichtsverlust.
+#### 1. Lung Cancer
+- **Description**: Lung cancer begins in the lungs and is divided into two main types:
+- **Small cell lung cancer (SCLC)**: An aggressive cancer that grows quickly and spreads early.
+- **Non-small cell lung cancer (NSCLC)**: More common, grows more slowly than SCLC.
+- **Risk factors**: Smoking, secondhand smoke, radon exposure, environmental toxins.
+- **Symptoms**: Cough, chest pain, shortness of breath, weight loss.
 
-#### 2. Brustkrebs (Mammakarzinom)
-- **Beschreibung**: Entsteht meist in den Milchgängen oder Drüsen der Brust. Es gibt verschiedene Subtypen:
-  - Hormonrezeptor-positiv
-  - HER2-positiv
-  - Dreifach-negativer Brustkrebs
-- **Risikofaktoren**: Genetische Prädisposition (BRCA1/BRCA2-Mutationen), hormonelle Einflüsse, Alter.
-- **Symptome**: Knoten in der Brust, Hautveränderungen, Sekretion aus der Brustwarze.
+#### 2. Breast cancer (mammary carcinoma)
+- **Description**: Usually starts in the milk ducts or glands of the breast. There are different subtypes:
+- Hormone receptor positive
+- HER2 positive
+- Triple negative breast cancer
+- **Risk factors**: Genetic predisposition (BRCA1/BRCA2 mutations), hormonal influences, age.
+- **Symptoms**: Lumps in the breast, skin changes, discharge from the nipple.
 
-#### 3. Prostatakrebs
-- **Beschreibung**: Betrifft die Prostata, eine Drüse des männlichen Fortpflanzungssystems. Der Krebs wächst meist langsam, kann jedoch aggressiv sein.
-- **Risikofaktoren**: Alter, genetische Veranlagung, Ernährung.
-- **Symptome**: Probleme beim Wasserlassen, Blut im Urin, Schmerzen im Beckenbereich.
+#### 3. Prostate cancer
+- **Description**: Affects the prostate, a gland of the male reproductive system. The cancer usually grows slowly but can be aggressive.
+- **Risk factors**: Age, genetic predisposition, diet.
+- **Symptoms**: Problems urinating, blood in the urine, pain in the pelvic area.
 
-#### 4. Darmkrebs (Kolorektalkarzinom)
-- **Beschreibung**: Beginnt im Dickdarm oder Rektum und entwickelt sich häufig aus Polypen.
-- **Risikofaktoren**: Familiäre Vorbelastung, chronische Entzündungen, ungesunde Ernährung.
-- **Symptome**: Blut im Stuhl, veränderte Stuhlgewohnheiten, Bauchschmerzen.
+#### 4. Colon cancer (colorectal carcinoma)
+- **Description**: Starts in the colon or rectum and often develops from polyps.
+- **Risk factors**: Family history, chronic inflammation, unhealthy diet.
+- **Symptoms**: Blood in the stool, changes in bowel habits, abdominal pain.
 
-#### 5. Leukämie
-- **Beschreibung**: Krebs des blutbildenden Gewebes wie Knochenmark und Lymphsystem, der eine übermäßige Produktion abnormaler weißer Blutkörperchen verursacht.
-- **Arten**: 
-  - Akute lymphatische Leukämie (ALL)
-  - Akute myeloische Leukämie (AML)
-  - Chronische lymphatische Leukämie (CLL)
-  - Chronische myeloische Leukämie (CML)
-- **Symptome**: Fieber, Müdigkeit, Infektionen, Blutungen.
+#### 5. Leukemia
+- **Description**: Cancer of the blood-forming tissues such as the bone marrow and lymphatic system that causes excessive production of abnormal white blood cells.
+- **Types**:
+- Acute lymphocytic leukemia (ALL)
+- Acute myeloid leukemia (AML)
+- Chronic lymphocytic leukemia (CLL)
+- Chronic myeloid leukemia (CML)
+- **Symptoms**: Fever, fatigue, infections, bleeding.
 
-#### 6. Hautkrebs (Melanom und andere Hauttumoren)
-- **Beschreibung**: Verschiedene Formen von Hautkrebs:
-  - **Basalzellkarzinom**: Häufigster, am wenigsten aggressiver Hautkrebs.
-  - **Plattenepithelkarzinom**: Kann aus präkanzerösen Hautveränderungen entstehen.
-  - **Melanom**: Aggressivster Hautkrebs, geht von den Melanozyten aus.
-- **Risikofaktoren**: Übermäßige UV-Exposition, genetische Prädisposition.
-- **Symptome**: Neue oder veränderte Hautläsionen.
+#### 6. Skin cancer (melanoma and other skin tumors)
+- **Description**: Different types of skin cancer:
+- **Basal cell carcinoma**: Most common, least aggressive skin cancer.
+- **Squamous cell carcinoma**: Can develop from precancerous skin changes.
+- **Melanoma**: Most aggressive skin cancer, originates from the melanocytes.
+- **Risk factors**: Excessive UV exposure, genetic predisposition.
+- **Symptoms**: New or changed skin lesions.
 
-#### 7. Bauchspeicheldrüsenkrebs (Pankreaskarzinom)
-- **Beschreibung**: Beginnt in den Zellen der Bauchspeicheldrüse und wird oft spät diagnostiziert.
-- **Risikofaktoren**: Rauchen, Diabetes, familiäre Veranlagung.
-- **Symptome**: Bauchschmerzen, Gelbsucht, Gewichtsverlust.
+#### 7. Pancreatic cancer (pancreatic carcinoma)
+- **Description**: Begins in the cells of the pancreas and is often diagnosed late.
+- **Risk factors**: Smoking, diabetes, family history.
+- **Symptoms**: Abdominal pain, jaundice, weight loss.
 
-#### 8. Nierenkrebs (Nierenzellkarzinom)
-- **Beschreibung**: Meist als Nierenzellkarzinom, seltener als Urothelkarzinom der Niere.
-- **Risikofaktoren**: Rauchen, Übergewicht, Bluthochdruck.
-- **Symptome**: Blut im Urin, Rückenschmerzen, Gewichtsverlust.
+#### 8. Kidney cancer (renal cell carcinoma)
+- **Description**: Mostly as renal cell carcinoma, less often as urothelial carcinoma of the kidney.
+- **Risk factors**: Smoking, obesity, high blood pressure.
+- **Symptoms**: Blood in the urine, back pain, weight loss.
 
-#### 9. Gebärmutterhalskrebs (Zervixkarzinom)
-- **Beschreibung**: Entwickelt sich im Gebärmutterhals, meist durch humane Papillomaviren (HPV) verursacht.
-- **Risikofaktoren**: HPV-Infektion, Rauchen, geschwächtes Immunsystem.
-- **Symptome**: Unregelmäßige Blutungen, Beckenschmerzen, Schmerzen beim Geschlechtsverkehr.
+#### 9. Cervical cancer (cervical carcinoma)
+- **Description**: Develops in the cervix, usually caused by human papilloma viruses (HPV).
+- **Risk factors**: HPV infection, smoking, weakened immune system.
+- **Symptoms**: Irregular bleeding, pelvic pain, pain during intercourse.
 
-#### 10. Hirntumor
-- **Beschreibung**: Gut- oder bösartige Tumore im Gehirn oder Rückenmark, wie z.B. Glioblastome oder Astrozytome.
-- **Risikofaktoren**: Genetische Prädisposition, Strahlenexposition.
-- **Symptome**: Kopfschmerzen, neurologische Ausfälle, Krampfanfälle.
+#### 10. Brain tumor
+- **Description**: Benign or malignant tumors in the brain or spinal cord, such as glioblastomas or astrocytomas.
+- **Risk factors**: Genetic predisposition, radiation exposure.
+- **Symptoms**: Headaches, neurological deficits, seizures.
 
-#### 11. Leberkrebs (Hepatozelluläres Karzinom)
-- **Beschreibung**: Beginnt in den Leberzellen, oft aufgrund chronischer Lebererkrankungen wie Hepatitis oder Zirrhose.
-- **Risikofaktoren**: Alkoholkonsum, Lebererkrankungen, Fettleibigkeit.
-- **Symptome**: Oberbauchschmerzen, Gelbsucht, Gewichtsverlust.
+#### 11. Liver cancer (hepatocellular carcinoma)
+- **Description**: Starts in the liver cells, often due to chronic liver disease such as hepatitis or cirrhosis.
+- **Risk factors**: Alcohol consumption, liver disease, obesity.
+- **Symptoms**: Upper abdominal pain, jaundice, weight loss.
 
-#### 12. Speiseröhrenkrebs (Ösophaguskarzinom)
-- **Beschreibung**: Entsteht in der Speiseröhre, meist als Plattenepithelkarzinom oder Adenokarzinom.
-- **Risikofaktoren**: Rauchen, Alkoholkonsum, chronisches Sodbrennen.
-- **Symptome**: Schluckbeschwerden, Brustschmerzen, Gewichtsverlust.
+#### 12. Esophageal cancer (esophageal carcinoma)
+- **Description**: Starts in the esophagus, usually as squamous cell carcinoma or adenocarcinoma.
+- **Risk factors**: Smoking, alcohol consumption, chronic heartburn.
+- **Symptoms**: Difficulty swallowing, chest pain, weight loss.
 
-#### 13. Schilddrüsenkrebs
-- **Beschreibung**: Beginnt in der Schilddrüse. Typen sind papillärer, follikulärer, medullärer und anaplastischer Schilddrüsenkrebs.
-- **Risikofaktoren**: Genetische Veranlagung, Strahlenexposition.
-- **Symptome**: Knoten im Hals, Schluckbeschwerden, Stimmveränderungen.
+#### 13. Thyroid cancer
+- **Description**: Starts in the thyroid gland. Types include papillary, follicular, medullary and anaplastic thyroid cancer.
+- **Risk factors**: Genetic predisposition, radiation exposure.
+- **Symptoms**: Lumps in the throat, difficulty swallowing, voice changes.
 
-#### 14. Blasenkrebs
-- **Beschreibung**: Entwickelt sich meist in den Zellen, die die Blase auskleiden (Urothelkarzinom).
-- **Risikofaktoren**: Rauchen, Chemikalien, chronische Blaseninfektionen.
-- **Symptome**: Blut im Urin, häufiges oder schmerzhaftes Wasserlassen.
+#### 14. Bladder cancer
+- **Description**: Usually develops in the cells that line the bladder (urothelial carcinoma).
+- **Risk factors**: Smoking, chemicals, chronic bladder infections.
+- **Symptoms**: Blood in the urine, frequent or painful urination.
 
-#### 15. Magenkrebs (Magenkarzinom)
-- **Beschreibung**: Beginnt in der Magenschleimhaut und wird oft durch Helicobacter-pylori-Infektionen oder eine salzreiche Ernährung begünstigt.
-- **Risikofaktoren**: Rauchen, familiäre Veranlagung, ungesunde Ernährung.
-- **Symptome**: Bauchschmerzen, Übelkeit, Appetitverlust, Gewichtsverlust.
+#### 15. Stomach cancer (gastric carcinoma)
+- **Description**: Begins in the stomach lining and is often caused by Helicobacter pylori infections or a high-salt diet.
+- **Risk factors**: Smoking, family history, unhealthy diet.
+- **Symptoms**: Abdominal pain, nausea, loss of appetite, weight loss.
 
-## Lizenz
+## License
 
 This project is licensed under the MIT license – see the [LICENSE](LICENSE) file for details.
