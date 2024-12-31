@@ -74,6 +74,10 @@ The goal is to help diagnose lung cancer, breast cancer, prostate cancer, colon 
 
 ### _SMN 1.0 EAP [soon]_
 
+<p align="center">
+    <img src="./img-readme/simon-bunner1.png" width="1400"/>
+</p>
+
 > 2025.04.01
 
 ### Demo
