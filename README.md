@@ -69,7 +69,7 @@ The goal is to help diagnose lung cancer, breast cancer, prostate cancer, colon 
 
 ## Updates
 
-### _SMN 1.0 [soon]_
+### _SIMON 1.0 [soon]_
 
 <p align="center">
     <img src="./img-readme/simon-banner1.png" width="1400"/>
@@ -77,7 +77,7 @@ The goal is to help diagnose lung cancer, breast cancer, prostate cancer, colon 
 
 > 2025.04.01
 
-### _SMN 2.0 [soon]_
+### _SIMON 2.0 [soon]_
 
 <p align="center">
     <img src="./img-readme/simon-banner2.png" width="1400"/>
@@ -85,7 +85,7 @@ The goal is to help diagnose lung cancer, breast cancer, prostate cancer, colon 
 
 > 2025.10.01
 
-### _SMN 3.0 [soon]_
+### _SIMON 3.0 [soon]_
 
 <p align="center">
     <img src="./img-readme/simon-banner3.png" width="1400"/>
