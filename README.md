@@ -44,6 +44,9 @@
 > **S** olution **I** ntelligence **M** edical **O** pen **N** etwork
 
 > ⚠️**Still in progress**⚠️
+
+> ⚠️ Important warning: Beware of fake accounts! ⚠️
+There is evidence that fake accounts may attempt to misrepresent this project. Please do not share personal information with anyone you do not know and only rely on content coming directly from this repository. Immediately report large activities or accounts to GitHub or the project team.
   
 This project works with the GP-LSTM-GRU-T-IQ parameter and aims to obtain images from various imaging techniques such as X-ray (classic X-ray), CT (computed tomography), MRI (magnetic resonance imaging), PET (positron emission tomography), DEXA (dual-energy X-ray absorptiometry) and fluoroscopy (interventional radiology).
 The goal is to help diagnose lung cancer, breast cancer, prostate cancer, colon cancer, leukemia, skin cancer, pancreatic cancer, kidney cancer, cervical cancer, brain tumors, liver cancer, esophageal cancer, thyroid cancer, bladder cancer, stomach cancer and other cancers.
