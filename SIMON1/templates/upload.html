@@ -1,0 +1,10 @@
+<html>
+<body>
+  <h1>Upload NIfTI Image</h1>
+  <form method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    <input type="file" name="nii_file" accept=".nii,.nii.gz">
+    <button type="submit">Upload</button>
+  </form>
+</body>
+</html>
