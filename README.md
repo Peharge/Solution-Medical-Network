@@ -106,6 +106,8 @@ The goal is to help diagnose lung cancer, breast cancer, prostate cancer, colon 
 
 > ⚠️**Still in progress**⚠️
 
+> soon Mac os and Linux
+
   **MAVIS (aka Xc++ 2)** is currently under development and is not fully available in this repository. Cloning the repository will only give you the README file, some images and already released codes, including the user interface (UI) compatible with **Qwen 2.5 Code** and **Llama 3.2 Vision**.
 
 ### Prerequisites
